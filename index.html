@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>JANKEN GAME</title>
+</head>
+
+<body>
+  <div class="bg">
+    <h1 class="page-title">JANKEN GAME</h1>
+
+    <div class="overlay-text visible">
+      Start
+    </div>
+    <div id="finish-text" class="overlay-text">
+      Finish
+      <span class="overlay-text-small">Click to Restart</span>
+      <div>
+        <small>
+          Score <span class="scorer" id="score">0</span>
+        </small>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="game_container">
+        <div class="game_info">
+          <h2>
+            <div class="info">Time</div>
+            <div class="timer" id="time-remaining">10</div>
+          </h2>
+          <h2>
+            <div class="info">Clicks</div>
+            <div class="clicker" id="clicks">5</div>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section id="gu_red" class="card gu">
+        <div class="front card-face">
+          <img class="guer card_value" src="img/gu_red.png">
+        </div>
+      </section>
+      <section id="gu_blue" class="card gu">
+        <div class="front card-face">
+          <img class="guer card_value" src="img/gu_blue.png">
+        </div>
+      </section>
+      <section id="gu_green" class="card gu">
+        <div class="front card-face">
+          <img class="guer card_value" src="img/gu_green.png">
+        </div>
+      </section>
+      <section id="cho_red" class="card cho">
+        <div class="front card-face">
+          <img class="choer card_value" src="img/cho_red.png">
+        </div>
+      </section>
+      <section id="cho_blue" class="card  cho">
+        <div class="front card-face">
+          <img class="choer card_value" src="img/cho_blue.png">
+        </div>
+      </section>
+      <section id="cho_green" class="card cho">
+        <div class="front card-face">
+          <img class="choer card_value" src="img/cho_green.png">
+        </div>
+      </section>
+      <section id="pa_red" class="card pa">
+        <div class="front card-face">
+          <img class="paer card_value" src="img/pa_red.png">
+        </div>
+      </section>
+      <section id="pa_blue" class="card pa">
+        <div class="front card-face">
+          <img class="paer card_value" src="img/pa_blue.png">
+        </div>
+      </section>
+      <section id="pa_green" class="card pa">
+        <div class="front card-face">
+          <img class="paer card_value" src="img/pa_green.png">
+        </div>
+      </section>
+    </main>
+    <div class="score-info">
+      <div>CPU</div>
+      <div class="cpuer" id="cpu">What?</div>
+      <div class="judgementer" id="judgement">Result</div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

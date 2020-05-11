@@ -36,6 +36,8 @@ class JANKEN {
     this.clicker.innerText = this.totalClicks;//残りクリック数初期化
     this.timer.innerText = this.timeRemaining;//残り時間初期化
     this.scorer.innerText = this.totalScore; //勝利数表示
+    this.cpuer.innerText = this.cpu;//CPUの初期化
+    this.judgementer.innerText = this.jud;//判定の初期化
   }
 
   startCountdown() { //カウントダウン用関数
